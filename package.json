@@ -20,13 +20,14 @@
     "skia-canvas": "^1.0.0"
   },
   "devDependencies": {
+    "@types/node": "^20.14.9",
     "@typescript-eslint/eslint-plugin": "^5.35.1",
     "@typescript-eslint/parser": "^5.35.1",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1",
-    "tsup": "^6.2.3",
+    "tsup": "^8.1.0",
     "typescript": "^4.8.2"
   },
   "scripts": {
