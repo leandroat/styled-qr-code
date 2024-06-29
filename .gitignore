@@ -1,0 +1,11 @@
+# IDEA
+.idea
+
+# built files
+/dist
+
+# npm modules
+/node_modules
+
+# Tests coverage results
+/coverage

@@ -1,0 +1,8 @@
+coverage
+src
+.editorconfig
+.eslintignore
+.eslintrc.js
+.gitignore
+.prettierrc.js
+tsconfig.json
