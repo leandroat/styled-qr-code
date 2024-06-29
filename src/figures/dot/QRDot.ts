@@ -99,6 +99,7 @@ export default class QRDot {
     this._rotateFigure({
       ...args,
       draw: () => {
+        context.moveTo(0, 0);
         context.arc(0, 0, size / 2, -Math.PI / 2, 0);
         context.lineTo(size / 2, size / 2);
         context.lineTo(-size / 2, size / 2);
