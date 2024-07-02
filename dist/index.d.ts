@@ -154,15 +154,6 @@ declare class QRCanvas {
      * @param options export options see https://github.com/samizdatco/skia-canvas#tobufferformat-page-matte-density-quality-outline
      */
     toDataUrl(format?: ExportFormat, options?: RenderOptions): Promise<string>;
-    /**
-     * Create a file of the qr code and save it to disk
-     *
-     * @param filePath file path including extension
-     * @param format Supported types: "png" | "jpg" | "jpeg" | "pdf" | "svg"
-     * @param options export options see https://github.com/samizdatco/skia-canvas#tobufferformat-page-matte-density-quality-outline
-     * @returns a promise that resolves once the file was written to disk
-     */
-    toFile(filePath: string, format?: ExportFormat, options?: RenderOptions): Promise<void>;
 }
 
 declare const _default$5: DotTypes;

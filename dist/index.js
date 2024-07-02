@@ -586,7 +586,6 @@ function getMode(data) {
 // src/core/QRCanvas.ts
 var import_skia_canvas = require("skia-canvas");
 var import_qrcode_generator = __toESM(require("qrcode-generator"));
-var import_fs = require("fs");
 
 // src/tools/merge.ts
 var isObject = (obj) => !!obj && typeof obj === "object" && !Array.isArray(obj);
@@ -1049,10 +1048,10 @@ var QRCanvas = class {
    * @param options export options see https://github.com/samizdatco/skia-canvas#tobufferformat-page-matte-density-quality-outline
    * @returns a promise that resolves once the file was written to disk
    */
-  async toFile(filePath, format = "png", options) {
-    await this.created;
-    return import_fs.promises.writeFile(filePath, await this._canvas.toBuffer(format, options));
-  }
+  // async toFile(filePath: string, format: ExportFormat = 'png', options?: RenderOptions): Promise<void> {
+  //   await this.created;
+  //   return fs.writeFile(filePath, await this._canvas.toBuffer(format, options));
+  // }
 };
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
