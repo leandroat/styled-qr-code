@@ -212,7 +212,7 @@ export default class QRCanvas {
         const x = yBeginning + j * dotSize;
         const y = xBeginning + i * dotSize;
 
-        dot.draw(x, y, dotSize, (xOffset: number, yOffset: number): boolean => {
+        dot.draw(y, x, dotSize, (xOffset: number, yOffset: number): boolean => {
           if (j + xOffset < 0 || i + yOffset < 0 || j + xOffset >= count || i + yOffset >= count) return false;
           if (filter && !filter(j + xOffset, i + yOffset)) return false;
           return !!this._qr && this._qr.isDark(i + yOffset, j + xOffset);
